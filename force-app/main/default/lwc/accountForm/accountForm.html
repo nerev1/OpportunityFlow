@@ -1,0 +1,36 @@
+<template>
+  <template if:true={error}>
+    <lightning-layout>
+      <p>{error.body.message}</p>
+    </lightning-layout>
+  </template>
+  
+  <template if:false={error}>
+    <lightning-input 
+      class="slds-m-around--small"
+      type="text" 
+      label="Search Account"
+      value={searchTerm}
+      placeholder="Type account name (at least 2 characters)"
+      onchange={handleChangeSearchKey}
+      ></lightning-input>
+
+    <lightning-combobox 
+      class="slds-m-around--small"
+      label='Select Account'
+      value={selectedAccountId}
+      placeholder="Select an account"
+      options={accountOptions}
+      onchange={handleChangeAccount}
+      ></lightning-combobox>
+    <p class="slds-m-around_small slds-align_absolute-center">
+      or
+    </p>
+    <lightning-button 
+      label="Create new account" 
+      title="Create new account" 
+      onclick={createAccount} 
+      class="slds-m-around_x-small slds-align_absolute-center"
+      ></lightning-button>
+  </template>
+</template>

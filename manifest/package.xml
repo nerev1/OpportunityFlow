@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
+    <!--<types>
         <members>*</members>
         <name>ApexClass</name>
     </types>
@@ -22,15 +22,35 @@
     </types>
     <types>
         <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>*</members>
         <name>StaticResource</name>
+    </types>-->
+    <types>
+        <members>AccountController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>accountForm</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>accountFormWrapper</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Opportunity_Flow</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Run_Opportunity_Flow</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Global-Layout with Opportunity Flow</members>
+        <name>Layout</name>
     </types>
     <version>50.0</version>
 </Package>
